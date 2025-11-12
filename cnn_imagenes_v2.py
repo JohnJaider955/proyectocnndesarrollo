@@ -186,9 +186,16 @@ def predecir_imagen(modelo, ruta_imagen, nombres_clases):
 
 print("\nRealizando predicciones de prueba...")
 imagenes_prueba = [
-    './imagenes_prueba/buddha.jpg',
-    './imagenes_prueba/cougar_face.jpg',
-    './imagenes_prueba/cocodrilo.jpg'
+    './imagenes_prueba/arroz.jpg',
+    './imagenes_prueba/banano.jpg',
+    './imagenes_prueba/manzana.jpg',
+    './imagenes_prueba/mango.jpg'
+    './imagenes_prueba/arroz.jpg',
+    './imagenes_prueba/frijoles.jpg',
+    './imagenes_prueba/garbanzos.jpg',
+    './imagenes_prueba/leche.jpg',
+    './imagenes_prueba/queso.jpg',
+    './imagenes_prueba/yogurt.jpg'
 ]
 
 for imagen_ruta in imagenes_prueba:
@@ -201,10 +208,10 @@ for imagen_ruta in imagenes_prueba:
         print(f"\nArchivo {imagen_ruta} no encontrado")
 
 
-modelo.save("export/modelo_budajaguarcocodrilo.h5")
+modelo.save("export/modelo_gruposalimenticios.h5")
 with open("export/labels.txt", "w", encoding="utf-8") as f:
     for name in LISTA_NOMBRE_CLASES:
         f.write(name + "\n")
 
-print("\nModelo guardado como 'export/modelo_budajaguarcocodrilo.h5' y labels en export/labels.txt")
+print("\nModelo guardado como 'export/modelo_gruposalimenticios.h5' y labels en export/labels.txt")
 print("\n¡Entrenamiento completado! SISAS")
