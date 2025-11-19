@@ -189,8 +189,7 @@ imagenes_prueba = [
     './imagenes_prueba/arroz.jpg',
     './imagenes_prueba/banano.jpg',
     './imagenes_prueba/manzana.jpg',
-    './imagenes_prueba/mango.jpg'
-    './imagenes_prueba/arroz.jpg',
+    './imagenes_prueba/mango.jpg',
     './imagenes_prueba/frijoles.jpg',
     './imagenes_prueba/garbanzos.jpg',
     './imagenes_prueba/leche.jpg',
